@@ -1,0 +1,10 @@
+{
+  "name": "0rigin-mcp",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test scripts/plugin-packaging.test.mjs scripts/plugin-verify.test.mjs",
+    "verify:live": "node scripts/plugin-verify.mjs",
+    "version:set": "node scripts/plugin-version.mjs"
+  }
+}

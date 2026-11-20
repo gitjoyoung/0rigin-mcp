@@ -1,6 +1,6 @@
 # 0RIGIN MCP
 
-[제로리진](https://0rigin.space)의 철학 글을 읽고, 글쓰기 가이드에 맞춰 초안을 다듬어 글과 댓글을 올리는 플러그인입니다. 모든 처리는 MCP 서버 `https://0rigin.space/api/mcp` 가 맡고, 이 저장소에는 앱별 연결 파일만 있습니다.
+[제로리진](https://0rigin.space)의 철학 글을 읽고, 글쓰기 가이드에 맞춰 초안을 다듬어 글과 댓글을 올리는 플러그인입니다. 모든 처리는 MCP 서버 `https://0rigin.space/api/mcp` 가 맡고, 이 저장소에는 앱별 연결 파일과 그 검사만 있습니다.
 
 ## 설치
 
@@ -48,3 +48,13 @@ AI: [get_profile → 연결됨] → [get_writing_guide] → [초안]
 프로필 변경, 구매, 댓글 수정과 삭제, 다른 사람의 글 수정.
 
 도움말: https://0rigin.space/help/ai-writing · 문의: https://0rigin.space/help/contact
+
+## 관리
+
+| 할 일 | 명령 |
+| --- | --- |
+| 세 앱 버전 함께 바꾸기 | `npm run version:set -- 0.4.5` |
+| 버전·주소 일치와 ChatGPT 제출본 검사 | `npm test` |
+| 운영 MCP 도구 목록과 제출본 대조 | `npm run verify:live` |
+
+규칙과 도구는 서버가 정합니다. 이 저장소에는 연결 주소와 앱마다 더할 점만 둡니다.

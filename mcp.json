@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "0rigin-posts": {
+      "type": "streamable-http",
+      "url": "https://0rigin.space/api/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "mixed",
+            "client": {
+              "mode": "cimd"
+            },
+            "resource": "https://0rigin.space/api/mcp",
+            "baseScopes": [
+              "posts:write",
+              "comments:write",
+              "offline_access"
+            ],
+            "authorizationServerBase": "https://0rigin.space",
+            "authorizationUrl": "https://0rigin.space/api/oauth/authorize",
+            "tokenUrl": "https://0rigin.space/api/oauth/token"
+          }
+        }
+      }
+    }
+  }
+}
