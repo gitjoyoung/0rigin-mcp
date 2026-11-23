@@ -6,7 +6,7 @@
 
 | 앱                     | 방법                                                                                           |
 | ---------------------- | ---------------------------------------------------------------------------------------------- |
-| Claude Code            | `claude plugin marketplace add gitjoyoung/0rigin-mcp` 뒤 `claude plugin install 0rigin@0rigin` |
+| Claude Code            | `/plugin install 0rigin-space --marketplace gitjoyoung/0rigin-mcp` 또는 `claude plugin marketplace add gitjoyoung/0rigin-mcp` 뒤 `claude plugin install 0rigin-space@0rigin-space` |
 | Gemini CLI             | `gemini extensions install https://github.com/gitjoyoung/0rigin-mcp --auto-update`             |
 | Claude 웹·데스크톱     | 설정의 커넥터에 `https://0rigin.space/api/mcp` 추가                                            |
 | 그 밖의 MCP 클라이언트 | Streamable HTTP 주소 `https://0rigin.space/api/mcp`                                            |
@@ -57,4 +57,4 @@ AI: [get_profile → 연결됨] → [get_writing_guide] → [초안]
 | --- | --- | --- |
 | **Claude Code** | `.claude-plugin/`, `.mcp.json`, `commands/`, `skills/` | 플러그인 마켓플레이스 카탈로그, 슬래시 커맨드, 에이전트 스킬 |
 | **Gemini CLI** | `gemini-extension.json`, `GEMINI.md` | 확장 매니페스트 및 컨텍스트 가이드 |
-| **OpenAI (ChatGPT)** | `plugin.json`, `mcp.json`, `assets/logo.png` | 플러그인 매니페스트 및 OAuth Streamable HTTP 엔드포인트 명세 |
+| **OpenAI (ChatGPT)** | `plugin.json`, `mcp.json` | 플러그인 매니페스트 및 OAuth Streamable HTTP 엔드포인트 명세 |
